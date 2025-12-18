@@ -40,13 +40,13 @@ Set the file arc as below:
 # Running code
 
 If you have run the code before, or you want to manually correct the phenotye family tree, you can go to the `Chains` folder, modify it and use it directly, in this case, you don't need the agent to search the database, and generate the formatted json file.
-` In this case, you need to input the DataFrame and the JSON file of the lineage.
+` In this case, you need to input the DataFrame and the JSON file of the lineage.`
 ```bash
 Lineage_correction.sh
 ```
 
 If you are using the method at first time, and you want to just input you marker list, the species and the type of the image organ, you will need to get the phenotype lineage tree, and save the structure into a JSON file from the tree's bottom to top. 
-` In this case, you need to input the DataFrame and the biomarker list, species and the tissue type, also you need to have a CLAUDE API key.
+` In this case, you need to input the DataFrame and the biomarker list, species and the tissue type, also you need to have a CLAUDE API key`.
 ```bash
 Whole_pipline.sh
 ```
