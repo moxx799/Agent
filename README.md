@@ -4,7 +4,7 @@ This project is inspired by [NIMBUS][Nimbus] and is a post-processing from [Nimb
 
 [Nimbus]: https://www.nature.com/articles/s41592-025-02826-9
 [repo]: https://github.com/angelolab/Nimbus-Inference
-
+[plate]: https://platform.claude.com/dashboard
 
 # Requirements
 If you need the AI to formulate the cell phenotype lineage, you need to get an API KEY from Claude platform [Claudeplate][plate];
@@ -12,7 +12,7 @@ Otherwise, you can skip this step.
 To enhance the LLM's phenotype knowledge, you can download the [Cellmarker2][cellmarker2] tables as they provide a huge number of marker functionalities across different tissues.
 [cellmarker2]: http://www.bio-bigdata.center/CellMarker_download.html
 
-[plate]: https://platform.claude.com/dashboard
+
 
 # Installation
 ```bash
