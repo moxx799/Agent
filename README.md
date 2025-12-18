@@ -13,3 +13,7 @@ You need to get an API KEY from claude plateform [Claudeplate][plate]
 ```bash
 conda env create -f environment.yml
 ```
+# Running code
+```bash
+main.sh
+```
