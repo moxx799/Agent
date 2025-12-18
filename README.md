@@ -5,6 +5,8 @@ This project is inspired by [NIMBUS][Nimbus] and is a post-processing from [Nimb
 [Nimbus]: https://www.nature.com/articles/s41592-025-02826-9
 [repo]: https://github.com/angelolab/Nimbus-Inference
 # Requirements
+You need to get an API KEY from claude plateform[Claude-plate][plate]
+[plate]: https://platform.claude.com/dashboard
 
 # Installation
 ```bash
