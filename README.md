@@ -1,5 +1,5 @@
-This is an AI-agent that works for Cell phenotype classification.
-We integrate NIMBUS channel-wise scores with the biological cell-phenotype chart to classify the cell phenotype, rather than the traditional unstable cluster method, which is unstable, requires human effort, and includes ambiguity.
+This is an automatic method that works for Cell phenotype classification.
+We integrate NIMBUS channel-wise scores with the biological cell-phenotype chart to classify the cell phenotype, rather than the traditional cluster method, which is unstable, requires human effort, and includes ambiguity.
 This project is inspired by [NIMBUS][Nimbus] and is a post-processing from [Nimbus_repository][repo].
 
 [Nimbus]: https://www.nature.com/articles/s41592-025-02826-9
@@ -7,7 +7,8 @@ This project is inspired by [NIMBUS][Nimbus] and is a post-processing from [Nimb
 
 
 # Requirements
-You need to get an API KEY from claude plateform [Claudeplate][plate]
+If you need the AI to formulate the cell phenotype lineage, you need to get an API KEY from Claude platform [Claudeplate][plate];
+Otherwise, you can skip this step.
 
 [plate]: https://platform.claude.com/dashboard
 
@@ -22,6 +23,10 @@ Set the file arc as below:
 
 `├── results` 
 
+`├── Cellmarker2` 
+
+`├── Chains` 
+
 `├── data` 
 
 `├── results` 
@@ -33,6 +38,13 @@ Set the file arc as below:
 `├── scripts_.py`
 
 # Running code
+
+If you are using the method at first time, you will need to get the phenotype lineage tree, and save the structure into a JSON file from the tree's bottom to top. 
+
 ```bash
-main.sh
+Whole_pipline.sh
+```
+If you have run the code before, or you want to manually correct the phenotye family tree, you can go to the `Chains` folder, modify it and use it directly, in this case, you don't need the agent to search the database, and generate the formatted json file.
+```bash
+Lineage_correction.sh
 ```
