@@ -4,6 +4,8 @@ This project is inspired by [NIMBUS][Nimbus] and is a post-processing from [Nimb
 
 [Nimbus]: https://www.nature.com/articles/s41592-025-02826-9
 [repo]: https://github.com/angelolab/Nimbus-Inference
+
+
 # Requirements
 You need to get an API KEY from claude plateform [Claudeplate][plate]
 
@@ -13,6 +15,23 @@ You need to get an API KEY from claude plateform [Claudeplate][plate]
 ```bash
 conda env create -f environment.yml
 ```
+# Folder structure
+Set the file arc as below:
+
+`Agent`
+
+`├── results` 
+
+`├── data` 
+
+`├── results` 
+
+`├── environment.yml` 
+
+`├── main.sh`
+
+`├── scripts_.py`
+
 # Running code
 ```bash
 main.sh
