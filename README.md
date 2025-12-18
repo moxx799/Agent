@@ -2,9 +2,7 @@ This is an automatic method that works for Cell phenotype classification.
 We integrate NIMBUS channel-wise scores with the biological cell-phenotype chart to classify the cell phenotype, rather than the traditional cluster method, which is unstable, requires human effort, and includes ambiguity.
 This project is inspired by [NIMBUS][Nimbus] and is a post-processing from [Nimbus_repository][repo].
 
-[Nimbus]: https://www.nature.com/articles/s41592-025-02826-9
-[repo]: https://github.com/angelolab/Nimbus-Inference
-[plate]: https://platform.claude.com/dashboard
+
 
 # Requirements
 If you need the AI to formulate the cell phenotype lineage, you need to get an API KEY from Claude platform [Claudeplate][plate];
@@ -52,3 +50,6 @@ If you are using the method at first time, and you want to just input you marker
 ```bash
 Whole_pipline.sh
 ```
+[Nimbus]: https://www.nature.com/articles/s41592-025-02826-9
+[repo]: https://github.com/angelolab/Nimbus-Inference
+[plate]: https://platform.claude.com/dashboard
