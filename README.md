@@ -6,6 +6,8 @@ This project is inspired by [NIMBUS][Nimbus] and is a post-processing from [Nimb
 
 # Requirements
 If you need the AI to formulate the cell phenotype lineage, you need to get an API KEY from Claude platform [Claudeplate][plate];
+
+
 Otherwise, you can skip this step.
 
 
