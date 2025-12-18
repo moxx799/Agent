@@ -44,7 +44,7 @@ If you have run the code before, or you want to manually correct the phenotye fa
 Lineage_correction.sh
 ```
 
-If you are using the method at first time, you will need to get the phenotype lineage tree, and save the structure into a JSON file from the tree's bottom to top. 
+If you are using the method at first time, and you want to just input you marker list, the species and the type of the image organ, you will need to get the phenotype lineage tree, and save the structure into a JSON file from the tree's bottom to top. 
 
 ```bash
 Whole_pipline.sh
