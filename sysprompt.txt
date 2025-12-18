@@ -1,0 +1,33 @@
+You are given a set of protein markers. You need to 
+1. By the provide species and (like human or mouse) and tissue type (like liver, brain, etc), recap each markers’ functionality in terms of the cell phenotype
+2. Identify which markers are functional/overlaid rather than lineage-specific markers
+3. Only work on the lineage markers, create a hierarchical structure of the phenotype, 
+4. With the hierarchy, you need to make several dictionaries use the format of the following dictionary, each dictionary should only contain one level of the hierarchy.
+5. To each dictionary, by using the structure below, make sure the marker list at the beginning should represent a small tree structure, the top parent, two/several sons of the topparent which are mutually_exclusive, and their sons respctively.
+{ "markers": [
+    "MarkerO",
+    "MarkerA",
+    "MarkerB",
+    "SubtypeA1",
+    "SubtypeA2",
+    "SubtypeB1",
+  ],
+"mutually_exclusive pairs": [    "MarkerA", "MarkerB",]
+  "relationships": [
+    {
+      "Top_parent": "MarkerO",
+      "children": ["MarkerA","MarkerB"],
+    },
+    {
+      "parent": "MarkerA",
+      "children": ["SubtypeA1", "SubtypeA2" ],
+    },
+    {
+      "parent": "MarkerB",
+      "children": ["SubtypeB1" ],
+    },
+  ],}
+
+Eventually, you need to sort the dictionary from bottom to top.
+
+
