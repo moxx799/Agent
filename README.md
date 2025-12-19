@@ -46,13 +46,13 @@ Set the file arc as below:
 If you have run the code before, or you want to manually correct the phenotype family tree, you can go to the `Chains` folder, modify it, and use it directly; hence, you don't need the agent to search the database and generate the formatted JSON file.
 ` In this case, you need to input the DataFrame and the JSON file of the lineage.`
 ```bash
-Lineage_correction.sh
+main.sh 
 ```
 
 If you are using the method at first time, and you want to just input your marker list, the species,s and the type of the image organ, you will need to get the phenotype lineage tree, and save the structure into a JSON file from the tree's bottom to top. 
 ` In this case, you need to input the DataFrame and the biomarker list, species, and the tissue type; you need to have a CLAUDE API key`.
 ```bash
-Whole_pipline.sh
+main.sh --mode whole_pipline
 ```
 [Nimbus]: https://www.nature.com/articles/s41592-025-02826-9
 [repo]: https://github.com/angelolab/Nimbus-Inference

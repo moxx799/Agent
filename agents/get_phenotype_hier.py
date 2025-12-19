@@ -128,9 +128,3 @@ class DictionaryAgent:
         
         print(f"✓ Data loaded from {filename}")
         return self.storage
-
-agent = DictionaryAgent()
-with open("claude_response", "r") as f:
-    sys_prompt = f.read()
-result = agent.process_prompt(sys_prompt)
-agent.save_to_json("phenotype.json")

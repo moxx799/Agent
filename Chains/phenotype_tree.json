@@ -1,0 +1,107 @@
+{"level_1":{
+    "markers": [
+      "DAPI",
+      "CD45",
+      "ECAD",
+      "VIM",
+      "CD31",
+      "CD45",
+      "CD11c","CD68","CD38","CD56","CD57","CD3","CD20",
+      "CK17","SMA"
+    ],
+    "mutually_exclusive pairs": ["CD45","CD31","ECAD","VIM"],
+    "relationships": [
+      {
+        "Top_parent": "DAPI",
+        "children": [
+          "CD45","CD31","ECAD","VIM"
+        ]
+      },
+      {
+        "parent": "CD45",
+        "children": [
+            "CD11c","CD68","CD38","CD56","CD57","CD3","CD20"
+        ]
+      },
+        {
+            "parent": "ECAD",
+            "children": [
+                "CK17","SMA"
+            ]
+        }
+    ]
+},
+
+"level_2":{
+    "markers": [
+      "CD11c",
+      "CD56",
+      "CD57",
+      "CD3",
+      "CD20",
+      "CD38",
+      "CD4","CD8"
+    ],
+    "mutually_exclusive pairs": [""],
+    "relationships": [
+      {
+        "Top_parent": "CD45",
+        "children": [
+          "CD11c","CD56","CD57","CD3","CD20","CD38"
+        ]
+      },
+      {
+        "parent": "CD3",
+        "children": [
+            "CD4","CD8"
+        ]
+      }
+    ]
+},
+"level_3":{
+    "markers": [
+      "CD68",
+      "CD11c",
+      "CD163",
+      "CK14"
+    ],
+    "mutually_exclusive pairs": ["CD11c","CD14"],
+    "relationships": [
+      {
+        "Top_parent": "CD45",
+        "children": [
+          "CD11c","CD14"
+        ]
+      },
+      {
+        "parent": "CD11c",
+        "children": [
+            "CD14"
+        ]
+      }
+    ]
+},
+"level_4":{
+    "markers": [
+      "CD4",
+      "CD8",
+      "CD3",
+      "FOXP3"
+    ],
+    "mutually_exclusive pairs": ["CD4","CD8"],
+    "relationships": [
+      {
+        "Top_parent": "CD3",
+        "children": [
+          "CD4","CD8"
+        ]
+      },
+      {
+        "parent": "CD4",
+        "children": [
+            "FOXP3"
+        ]
+      }
+    ]
+}
+}
